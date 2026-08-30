@@ -1,0 +1,41 @@
+{
+  "name": "genpark-conversational-podcast-dialogue-audio-synthesizer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Conversational podcast dialogue audio synthesizer generating natural multi-speaker banter with dynamic speech inflections.",
+  "author": "genpark",
+  "category": "podcast-audio",
+  "tags": [
+    "notebooklm",
+    "podcast-generator",
+    "dialogue-tts",
+    "conversational-audio",
+    "multi-speaker"
+  ],
+  "inputs": {
+    "source_knowledge_text": {
+      "type": "string"
+    },
+    "hosts_count": {
+      "type": "integer"
+    },
+    "episode_duration_minutes": {
+      "type": "integer"
+    }
+  },
+  "outputs": {
+    "podcast_generation_id": {
+      "type": "string"
+    },
+    "dialogue_turns_count": {
+      "type": "integer"
+    },
+    "bilingual_prosody_score_pct": {
+      "type": "number"
+    },
+    "mastered_audio_mp3_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
